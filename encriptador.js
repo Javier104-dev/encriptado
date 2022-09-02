@@ -2,7 +2,7 @@
 
 document.querySelector("#encriptar").onclick = function(){
   const $textoEscrito = document.querySelector("#texto-normal").value;
-  const textoEscrito = $textoEscrito.toLowerCase()
+  const textoEscrito = $textoEscrito.toLowerCase();
   
   document.querySelector("#texto-encriptado").value = encriptar(textoEscrito);
  
@@ -44,7 +44,7 @@ function encriptar(texto){
     o:"ober",
     u:"ufat"
   };
-  texto = texto.replace(/a|e|i|o|u/g, function(x){
+  texto = texto.replace(/a|e|i|o|u/gi, function(x){
     return reemplazos[x];
   });
   return texto;
@@ -97,10 +97,6 @@ function verBoton(){
 function ocultarBoton(){
   document.querySelector("#copiarTexto").className = "oculto";
 }
-
-
-
-
 
 
 
