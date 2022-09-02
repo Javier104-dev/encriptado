@@ -8,7 +8,6 @@ document.querySelector("#encriptar").onclick = function(){
  
   ocultarfoto();
   verTextArea();
-
 }
 
 document.querySelector("#desencriptar").onclick = function(){
@@ -17,13 +16,11 @@ document.querySelector("#desencriptar").onclick = function(){
 
   document.querySelector("#texto-encriptado").value = desencriptar(textoDesencriptado);
   document.querySelector("#titulo-caja").textContent = "Texto Desencriptado"
- 
 }
 
 document.querySelector("#resetear").onclick = function(){
   ocultarTextArea();
   verFoto()
-  
 }
 
 
