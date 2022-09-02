@@ -8,19 +8,29 @@ document.querySelector("#encriptar").onclick = function(){
  
   ocultarfoto();
   verTextArea();
+  verBoton()
 }
 
 document.querySelector("#desencriptar").onclick = function(){
   const $textoDesencriptado = document.querySelector("#texto-normal");
   const textoDesencriptado = $textoDesencriptado.value;
-
+  
   document.querySelector("#texto-encriptado").value = desencriptar(textoDesencriptado);
   document.querySelector("#titulo-caja").textContent = "Texto Desencriptado"
+
+}
+
+
+document.querySelector("#copiarTexto").onclick = function(event){
+  document.querySelector("#texto-normal").value = "";
+  copiarTextoEncriptado();
+  event.preventDefault();
 }
 
 document.querySelector("#resetear").onclick = function(){
   ocultarTextArea();
-  verFoto()
+  verFoto();
+  ocultarBoton();
 }
 
 
@@ -54,6 +64,16 @@ function desencriptar(texto){
   return texto;
 }
 
+
+function copiarTextoEncriptado(){
+  let texto = document.querySelector("#texto-encriptado");
+  texto.select();
+  
+  document.execCommand("copy");
+}
+
+
+
 function verTextArea(){
   document.querySelector("#idtextArea").className = ""; // siempre usar #(id) para ocultar o da error
 }
@@ -68,6 +88,14 @@ function verFoto(){
 
 function ocultarfoto(){
   document.querySelector("#imagen").className = "oculto";
+}
+
+function verBoton(){
+  document.querySelector("#copiarTexto").className = "";
+}
+
+function ocultarBoton(){
+  document.querySelector("#copiarTexto").className = "oculto";
 }
 
 
