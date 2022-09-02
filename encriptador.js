@@ -62,7 +62,7 @@ function verTextArea(){
 }
 
 function ocultarTextArea(){
-  document.querySelector("#idtextArea").className = "segunda-caja";
+  document.querySelector("#idtextArea").className = "oculto";
 }
 
 function verFoto(){
@@ -70,7 +70,7 @@ function verFoto(){
 }
 
 function ocultarfoto(){
-  document.querySelector("#imagen").className = "segunda-caja";
+  document.querySelector("#imagen").className = "oculto";
 }
 
 
