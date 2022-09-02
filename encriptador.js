@@ -1,8 +1,8 @@
 
 
 document.querySelector("#encriptar").onclick = function(){
-  const $textoEscrito = document.querySelector("#texto-normal");
-  const textoEscrito = $textoEscrito.value
+  const $textoEscrito = document.querySelector("#texto-normal").value;
+  const textoEscrito = $textoEscrito.toLowerCase()
   
   document.querySelector("#texto-encriptado").value = encriptar(textoEscrito);
  
@@ -12,8 +12,8 @@ document.querySelector("#encriptar").onclick = function(){
 }
 
 document.querySelector("#desencriptar").onclick = function(){
-  const $textoDesencriptado = document.querySelector("#texto-normal");
-  const textoDesencriptado = $textoDesencriptado.value;
+  const $textoDesencriptado = document.querySelector("#texto-normal").value;
+  const textoDesencriptado = $textoDesencriptado.toLowerCase();
   
   document.querySelector("#texto-encriptado").value = desencriptar(textoDesencriptado);
   document.querySelector("#titulo-caja").textContent = "Texto Desencriptado"
