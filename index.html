@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="./style.css" >
     </head>
 
     <body>
@@ -13,17 +14,26 @@
 
         <main>
             <form>
-                <label for="texto-normal">Texto para encriptar</label>
-                <p></p>
-                <textarea id="texto-normal" cols="60" rows="15" placeholder="Escriba su mensaje"></textarea>
-                <input id="encriptar" type="button" value="Encriptar Texto">
-                <input id="desencriptar" type="button" value="Desencriptar Texto">
-                <p></p>
-                <label for="texto-encriptado">Texto encriptado</label>
-                <p></p>
-                <textarea id="texto-encriptado" cols="60" rows="15" placeholder="Texto encriptado"></textarea>
+                <div>
+                    <h2><label for="texto-normal">Texto para encriptar</label></h2>
+                    <br>
+                    <textarea id="texto-normal" cols="60" rows="15" placeholder="Escriba su mensaje"></textarea>
+                    <input id="encriptar" type="button" value="Encriptar Texto">
+                    <input id="desencriptar" type="button" value="Desencriptar Texto">
+                </div>
                 
-                <p><button type="reset">Restaurar el encriptador</button></p>
+                <div id="imagen" >
+                    <img src="./iStock-524882074.png">
+                </div>
+
+
+                <div class="segunda-caja" id="idtextArea">
+                    <h2></h2><label for="texto-encriptado" id="titulo-caja">Texto encriptado</label></h2>
+                    <br>
+                    <textarea id="texto-encriptado" cols="60" rows="15" placeholder="Texto encriptado"></textarea>
+                </div>
+                
+                <p><button id="resetear" type="reset">Restaurar el encriptador</button></p>
             </form>
         </main>
         <footer>

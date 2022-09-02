@@ -5,19 +5,27 @@ document.querySelector("#encriptar").onclick = function(){
   const textoEscrito = $textoEscrito.value
   
   document.querySelector("#texto-encriptado").value = encriptar(textoEscrito);
+ 
+  ocultarfoto();
+  verTextArea();
 
-  return $textoEscrito.value= "";
-  
 }
 
 document.querySelector("#desencriptar").onclick = function(){
   const $textoDesencriptado = document.querySelector("#texto-normal");
   const textoDesencriptado = $textoDesencriptado.value;
 
-  document.querySelector("#texto-normal").value = desencriptar(textoDesencriptado);
-
-
+  document.querySelector("#texto-encriptado").value = desencriptar(textoDesencriptado);
+  document.querySelector("#titulo-caja").textContent = "Texto Desencriptado"
+ 
 }
+
+document.querySelector("#resetear").onclick = function(){
+  ocultarTextArea();
+  verFoto()
+  
+}
+
 
 
 
@@ -29,8 +37,8 @@ function encriptar(texto){
     o:"ober",
     u:"ufat"
   };
-  texto = texto.replace(/a|e|i|o|u/g, function(asd){
-    return reemplazos[asd];
+  texto = texto.replace(/a|e|i|o|u/g, function(x){
+    return reemplazos[x];
   });
   return texto;
 }
@@ -43,11 +51,28 @@ function desencriptar(texto){
     ober:"o",
     ufat:"u"
   };
-  texto = texto.replace(/ai|enter|imes|ober|ufat/g, function(asd){
-    return reemplazos[asd];
+  texto = texto.replace(/ai|enter|imes|ober|ufat/g, function(x){
+    return reemplazos[x];
   });
   return texto;
 }
+
+function verTextArea(){
+  document.querySelector("#idtextArea").className = ""; // siempre usar #(id) para ocultar o da error
+}
+
+function ocultarTextArea(){
+  document.querySelector("#idtextArea").className = "segunda-caja";
+}
+
+function verFoto(){
+  document.querySelector("#imagen").className = ""; // siempre usar #(id) para ocultar o da error
+}
+
+function ocultarfoto(){
+  document.querySelector("#imagen").className = "segunda-caja";
+}
+
 
 
 
