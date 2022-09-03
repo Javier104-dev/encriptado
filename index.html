@@ -4,42 +4,52 @@
     <head>
         <meta charset="UTF-8">
         <title>Encriptador Alura</title>
-        <link rel="stylesheet" href="./style.css" >
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
         <header>
-            <h1>Encriptador</h1>
+            <h1 class="titulo">Encriptador</h1>
         </header>
 
         <main>
             <form>
-                <div>
-                    <h2><label for="texto-normal">Texto para encriptar</label></h2>
-                    <br>
-                    <textarea id="texto-normal" cols="60" rows="15" placeholder="Escriba su mensaje"></textarea>
-                    <input id="encriptar" type="button" value="Encriptar Texto">
-                    <input id="desencriptar" type="button" value="Desencriptar Texto">
-                </div>
-                
-                <div id="imagen" >
-                    <img src="./iStock-524882074.png "  width="600" height="400">
-                </div>
+
+                <div class="contenedor">
+                    <div class="area-encriptado">
+                        <h2><label for="texto-normal">Texto para encriptar</label></h2>
+                        
+                        <textarea id="texto-normal" cols="50" rows="30" placeholder="Escriba su mensaje"></textarea>
+                        <br>
+                        <input id="encriptar" type="button" value="Encriptar Texto">
+                        <input id="desencriptar" type="button" value="Desencriptar Texto">
+                        
+                    </div>
+                    
+                    <div class="imagen" id="imagen" >
+                        <img src="./iStock-524882074.png "  width="400" height="700">
+                    </div>
 
 
-                <div class="oculto" id="idtextArea">
-                    <h2></h2><label for="texto-encriptado" id="titulo-caja">Texto encriptado</label></h2>
-                    <br>
-                    <textarea id="texto-encriptado" cols="60" rows="15" placeholder="Texto encriptado"></textarea>
+                    <div class="oculto" id="idtextArea">
+                        <h2><label for="texto-encriptado" id="titulo-caja">Texto encriptado</label></h2>
+                        
+                        <textarea id="texto-encriptado" cols="50" rows="30" placeholder="Texto encriptado"></textarea>
+                        <br>
+                        <button id="resetear" type="reset">Restaurar el encriptador </button>
+                        <button id="copiarTexto" class="oculto">Copiar texto</button>
+                    </div>
+
                 </div>
                 
-                <p><button id="resetear" type="reset">Restaurar el encriptador</button></p>
-                <button id="copiarTexto" class="oculto">Copiar texto</button>
+
             </form>
         </main>
         <footer>
-            <p><strong>Encriptador BETA por Javier V.</strong></p>
+            <img class="logo" src="./css/candado.png" alt="Logo de pagina" >
+            <p class="leyenda">Encriptador BETA por Javier V.</p>
         </footer>
     </body>
-    <script src="./encriptador.js"></script>
+    <script src="./js/encriptador.js"></script>
 </html>

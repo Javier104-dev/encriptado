@@ -1,0 +1,43 @@
+main{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    margin: 1em;
+}
+
+
+.area-encriptado, .imagen, #idtextArea{
+    float: left;
+    margin:  2em;
+    
+}
+
+
+
+
+.oculto{
+    display: none;
+}
+
+
+.logo{
+    width: 100px;
+    box-shadow: -1px -1px 1px 1px rgb(48, 47, 47);
+}
+
+footer{
+    text-align: center;
+    background: #181818;
+    padding: 50px;
+  }
+
+.leyenda{
+    padding: 1em;
+    color: white;
+    font-size: 15px;
+}

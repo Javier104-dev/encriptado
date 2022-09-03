@@ -1,14 +1,20 @@
 
 
 document.querySelector("#encriptar").onclick = function(){
+
   const $textoEscrito = document.querySelector("#texto-normal").value;
   const textoEscrito = $textoEscrito.toLowerCase();
   
-  document.querySelector("#texto-encriptado").value = encriptar(textoEscrito);
- 
-  ocultarfoto();
-  verTextArea();
-  verBoton()
+  if(!/[a-z]+$/g.test(textoEscrito)){
+
+    alert("Solo se permiten letras")}
+
+    else{ document.querySelector("#texto-encriptado").value = encriptar(textoEscrito);
+      ocultarfoto();
+      verTextArea();
+      verBoton()
+    }
+
 }
 
 document.querySelector("#desencriptar").onclick = function(){
@@ -97,8 +103,6 @@ function verBoton(){
 function ocultarBoton(){
   document.querySelector("#copiarTexto").className = "oculto";
 }
-
-
 
 
 
