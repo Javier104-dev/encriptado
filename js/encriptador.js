@@ -1,5 +1,3 @@
-
-
 document.querySelector("#encriptar").onclick = function(){
 
   const $textoEscrito = document.querySelector("#texto-normal").value;
@@ -17,7 +15,6 @@ document.querySelector("#encriptar").onclick = function(){
       verBoton()
       ocultarAlertaCopiado();
     }
-
 }
 
 document.querySelector("#desencriptar").onclick = function(){
