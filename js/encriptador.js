@@ -28,7 +28,7 @@ document.querySelector("#desencriptar").onclick = function(){
     
   }else{
       document.querySelector("#texto-encriptado").value = desencriptar(textoDesencriptado);
-      document.querySelector("#titulo-caja").value = "Mensaje Desencriptado"
+      document.querySelector("#titulo-caja").textContent = "Mensaje Desencriptado"
       ocultarAlertaCopiado();
       ocultarAlerta();
     }

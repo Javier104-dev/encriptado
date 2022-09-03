@@ -4,13 +4,10 @@ body{
     text-shadow: 8px 6px 7px #211d1b;
 }
 
-main{
-    width: 940px;
-    margin: 0 auto;
-}
-
 .contenedor{
     display: flex;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .titulo{
@@ -71,7 +68,7 @@ h2{
 
 .area-encriptado, #imagen2, #idtextArea{
     float: left;
-    margin:  1em;
+    margin:  1em auto;
 }
 
 #alerta-copiado{
@@ -147,10 +144,60 @@ footer{
     text-align: center;
     background: #181818;
     padding: 50px;
+    width: auto;
   }
 
 .leyenda{
     padding: 1em;
     color: white;
     font-size: 13px;
+}
+
+@media screen and (max-width:480px){
+    .contenedor{
+        display: grid;
+        width: auto;
+
+    }
+
+    .titulo{
+        color: white;
+        text-shadow: 5px 5px 7px #225daa;
+        margin: 20px auto 3px;
+    }
+
+    h2{
+        color: white;
+        text-shadow: 5px 5px 7px #225daa;
+    }
+    
+    .area-encriptado, #imagen2, #idtextArea{
+        float: left;
+        margin: 0px auto;
+        height: auto;
+    }
+
+    .boton, #copiarTexto{
+        margin: 8px 0px;
+    }
+
+    .area-texto{
+        height: 250px;
+    }
+
+    .texto-encima {
+        width: 350px;
+        font-weight: bold;
+        color: white;
+        font-size: 21px;
+    }
+
+    .imagen-elegida{
+        height: 284px;
+    }
+
+    
+    .marco-imagen{
+        margin-bottom: 53px;
+    }
 }
