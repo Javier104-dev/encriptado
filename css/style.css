@@ -39,11 +39,10 @@ h2{
     color: white;
 }
 
-
 .imagen-elegida{
     border-radius: 10px;
-    height: 500px;
-    width: 400px;
+    height: 494px;
+    width: 381px;
     box-shadow: 8px 6px 7px #211d1b;
     opacity: 0.7;
 }
