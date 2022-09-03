@@ -20,6 +20,7 @@ main{
 }
 
 h2{
+    margin: 15px;
     text-align: center;
     font-size: 25px;
     font-weight: bold
@@ -30,6 +31,7 @@ h2{
 }
 
 #alerta{
+    display: table;
     background: red;
     text-align: center;
     padding: 2px;
@@ -73,6 +75,7 @@ h2{
 }
 
 #alerta-copiado{
+    display: table;
     background: green;
     text-align: center;
     padding: 2px;
