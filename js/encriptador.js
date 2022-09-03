@@ -5,11 +5,12 @@ document.querySelector("#encriptar").onclick = function(){
   const $textoEscrito = document.querySelector("#texto-normal").value;
   const textoEscrito = $textoEscrito.toLowerCase();
   
-  if(!/[a-z]+$/g.test(textoEscrito)){
+  if(!/^[a-z ]+$/g.test(textoEscrito)){ //agregar un espacio para que acepte espacios
 
-    alert("Solo se permiten letras")}
+    alert("Solamente se permiten letras")}
 
     else{ document.querySelector("#texto-encriptado").value = encriptar(textoEscrito);
+      
       ocultarfoto();
       verTextArea();
       verBoton()
@@ -22,7 +23,7 @@ document.querySelector("#desencriptar").onclick = function(){
   const textoDesencriptado = $textoDesencriptado.toLowerCase();
   
   document.querySelector("#texto-encriptado").value = desencriptar(textoDesencriptado);
-  document.querySelector("#titulo-caja").textContent = "Texto Desencriptado"
+  document.querySelector("#titulo-caja").value = "Mensaje Desencriptado"
 
 }
 
@@ -35,10 +36,10 @@ document.querySelector("#copiarTexto").onclick = function(event){
 
 document.querySelector("#resetear").onclick = function(){
   ocultarTextArea();
-  verFoto();
+  verFoto()
   ocultarBoton();
+  
 }
-
 
 
 
@@ -89,11 +90,11 @@ function ocultarTextArea(){
 }
 
 function verFoto(){
-  document.querySelector("#imagen").className = ""; // siempre usar #(id) para ocultar o da error
+  document.querySelector("#imagen2").className = ""; // siempre usar #(id) para ocultar o da error
 }
 
 function ocultarfoto(){
-  document.querySelector("#imagen").className = "oculto";
+  document.querySelector("#imagen2").className = "oculto";
 }
 
 function verBoton(){

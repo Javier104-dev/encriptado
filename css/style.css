@@ -1,7 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-image: radial-gradient(circle at 46.86% 85.89%, #399f9f 0, #378c90 12.5%, #37777d 25%, #356066 37.5%, #31474c 50%, #2a3032 62.5%, #211d1b 75%, #190900 87.5%, #0f0000 100%);
-    text-shadow: 5px 5px 10px #211d1b;
+    text-shadow: 8px 6px 10px #211d1b;
 }
 
 main{
@@ -23,10 +23,34 @@ h2{
     font-weight: bold
 }
 
-.area-encriptado, .imagen, #idtextArea{
+.marco-imagen{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+   
+    color: white;
+}
+
+
+.imagen-elegida{
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+    box-shadow: 8px 6px 10px #211d1b;
+    opacity: 0.7;
+}
+
+.area-encriptado, #imagen2, #idtextArea{
     float: left;
     margin:  1em;
-    
 }
 
 .area-texto{
@@ -35,17 +59,17 @@ h2{
     border-radius: 10px;
     padding:15px;
     font-size: 20px;
+    box-shadow: 8px 6px 10px #211d1b;
 }
 
 
 .boton, #copiarTexto{
-    color: #185552;
     margin: 1em;
     padding: 10px;
     border: 1px black solid;
     border-radius: 10px;
     opacity: 0.6;
-    box-shadow: 1px 1px 1px 1px rgb(12, 11, 11);
+    box-shadow: 8px 6px 4px rgb(12, 11, 11);
     cursor: pointer;
    
 }

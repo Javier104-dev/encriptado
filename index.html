@@ -16,35 +16,34 @@
 
         <main>
             <form>
-
                 <div class="contenedor">
                     <div class="area-encriptado">
-                        <h2><label for="texto-normal">Texto para encriptar</label></h2>
+                        <h2><label for="texto-normal">Introduzca su mensaje</label></h2>
                         
                         <textarea class="area-texto" id="texto-normal" cols="30" rows="20" placeholder="Escriba su mensaje"></textarea>
                         <br>
                         <input class="boton" id="encriptar" type="button" value="Encriptar Texto">
                         <input class="boton" id="desencriptar" type="button" value="Desencriptar Texto">
-                        
                     </div>
                     
-                    <div class="imagen" id="imagen" >
-                        <img src="./css/iStock-1197780051-scaled-1.jpg "  height="384" width="400">
+                    <div class="imagen" id="imagen2" >
+                        <h2>Protege tu informacion</h2>
+                        <div class="marco-imagen">
+                            <img class="imagen-elegida" src="./css/iStock-1197780051-scaled-1.jpg ">
+                            <div class="texto-encima">El cifrado es clave para asegurar las comunicaciones en línea para todo, desde transacciones financieras hasta atención médica. Es un componente fundamental sobre el cual se construye una Internet confiable y eficaz.</div>
+                        </div>
                     </div>
 
-
                     <div class="oculto" id="idtextArea">
-                        <h2><label for="texto-encriptado" id="titulo-caja">Texto encriptado</label></h2>
+                        <h2><label for="texto-encriptado" id="titulo-caja">Mensaje encriptado</label></h2>
                         
                         <textarea class="area-texto" id="texto-encriptado" cols="30" rows="20" placeholder="Texto encriptado"></textarea>
                         <br>
-                        <button class="boton" id="resetear" type="reset">Restaurar el encriptador </button>
+                        
                         <button id="copiarTexto" class="oculto">Copiar texto</button>
+                        <button class="boton" id="resetear" type="reset">Resetear campos</button>
                     </div>
-
                 </div>
-                
-
             </form>
         </main>
         <footer>
