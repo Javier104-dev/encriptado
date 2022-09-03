@@ -7,6 +7,10 @@ body{
 main{
     width: 940px;
     margin: 0 auto;
+}
+
+
+.contenedor{
     display: flex;
 }
 
@@ -21,6 +25,14 @@ h2{
     font-size: 25px;
     margin: 1em;
     font-weight: bold
+}
+
+.visibilidad{
+    visibility:hidden;
+}
+
+.visibilidad2{
+    visibility: hidden;
 }
 
 .marco-imagen{
@@ -110,5 +122,5 @@ footer{
 .leyenda{
     padding: 1em;
     color: white;
-    font-size: 15px;
+    font-size: 13px;
 }

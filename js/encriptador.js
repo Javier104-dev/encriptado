@@ -7,13 +7,15 @@ document.querySelector("#encriptar").onclick = function(){
   
   if(!/^[a-z ]+$/g.test(textoEscrito)){ //agregar un espacio para que acepte espacios
 
-    alert("Solamente se permiten letras")}
+    verAlerta()}
 
     else{ document.querySelector("#texto-encriptado").value = encriptar(textoEscrito);
       
+      ocultarAlerta();
       ocultarfoto();
       verTextArea();
       verBoton()
+      ocultarAlertaCopiado();
     }
 
 }
@@ -21,24 +23,35 @@ document.querySelector("#encriptar").onclick = function(){
 document.querySelector("#desencriptar").onclick = function(){
   const $textoDesencriptado = document.querySelector("#texto-normal").value;
   const textoDesencriptado = $textoDesencriptado.toLowerCase();
-  
-  document.querySelector("#texto-encriptado").value = desencriptar(textoDesencriptado);
-  document.querySelector("#titulo-caja").value = "Mensaje Desencriptado"
 
+  if(!/^[a-z ]+$/g.test(textoDesencriptado)){
+    
+    verAlerta();
+    ocultarAlertaCopiado();
+    
+  }else{
+      document.querySelector("#texto-encriptado").value = desencriptar(textoDesencriptado);
+      document.querySelector("#titulo-caja").value = "Mensaje Desencriptado"
+      ocultarAlertaCopiado();
+      ocultarAlerta();
+    }
 }
 
 
 document.querySelector("#copiarTexto").onclick = function(event){
   document.querySelector("#texto-normal").value = "";
   copiarTextoEncriptado();
-  event.preventDefault();
+  verAlertaCopiado();
+  ocultarAlerta();
+  event.preventDefault(); //se reenvia el formulario y reinicia la pagina, se pone event (antes retur false)
 }
 
 document.querySelector("#resetear").onclick = function(){
   ocultarTextArea();
   verFoto()
   ocultarBoton();
-  
+  ocultarAlerta();
+  ocultarAlertaCopiado();
 }
 
 
@@ -105,6 +118,21 @@ function ocultarBoton(){
   document.querySelector("#copiarTexto").className = "oculto";
 }
 
+function verAlerta(){
+  document.querySelector("#alerta").className = "";
+}
+
+function ocultarAlerta(){
+  document.querySelector("#alerta").className = "visibilidad";
+}
+
+function verAlertaCopiado(){
+  document.querySelector("#alerta-copiado").className = "";
+}
+
+function ocultarAlertaCopiado(){
+  document.querySelector("#alerta-copiado").className = "visibilidad2";
+}
 
 
 

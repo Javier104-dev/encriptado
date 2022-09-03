@@ -19,7 +19,7 @@
                 <div class="contenedor">
                     <div class="area-encriptado">
                         <h2><label for="texto-normal">Introduzca su mensaje</label></h2>
-                        
+                        <p class="visibilidad" id="alerta">No se permiten acentos y caracteres especiales</p>
                         <textarea class="area-texto" id="texto-normal" cols="30" rows="20" placeholder="Escriba su mensaje"></textarea>
                         <br>
                         <input class="boton" id="encriptar" type="button" value="Encriptar Texto">
@@ -28,6 +28,7 @@
                     
                     <div class="imagen" id="imagen2" >
                         <h2>Protege tu informacion</h2>
+                        <p class="visibilidad2">Texto copiado con exito</p>
                         <div class="marco-imagen">
                             <img class="imagen-elegida" src="./css/iStock-1197780051-scaled-1.jpg ">
                             <div class="texto-encima">El cifrado es clave para asegurar las comunicaciones en línea para todo, desde transacciones financieras hasta atención médica. Es un componente fundamental sobre el cual se construye una Internet confiable y eficaz.</div>
@@ -36,10 +37,9 @@
 
                     <div class="oculto" id="idtextArea">
                         <h2><label for="texto-encriptado" id="titulo-caja">Mensaje encriptado</label></h2>
-                        
+                        <p class="visibilidad2" id="alerta-copiado">Texto copiado con exito</p>
                         <textarea class="area-texto" id="texto-encriptado" cols="30" rows="20" placeholder="Texto encriptado"></textarea>
                         <br>
-                        
                         <button id="copiarTexto" class="oculto">Copiar texto</button>
                         <button class="boton" id="resetear" type="reset">Resetear campos</button>
                     </div>
