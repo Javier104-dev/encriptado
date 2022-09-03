@@ -1,3 +1,9 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: radial-gradient(circle at 46.86% 85.89%, #399f9f 0, #378c90 12.5%, #37777d 25%, #356066 37.5%, #31474c 50%, #2a3032 62.5%, #211d1b 75%, #190900 87.5%, #0f0000 100%);
+    text-shadow: 5px 5px 10px #211d1b;
+}
+
 main{
     width: 940px;
     margin: 0 auto;
@@ -6,19 +12,61 @@ main{
 
 .titulo{
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     margin: 1em;
 }
 
+h2{
+    text-align: center;
+    font-size: 25px;
+    margin: 1em;
+    font-weight: bold
+}
 
 .area-encriptado, .imagen, #idtextArea{
     float: left;
-    margin:  2em;
+    margin:  1em;
     
 }
 
+.area-texto{
+    background-image: radial-gradient(circle at 20.17% 44.74%, #247a6b 0, #1c6960 16.67%, #185552 33.33%, #174040 50%, #152c2d 66.67%, #121b1c 83.33%, #090a0a 100%);
+    border: 2px black solid;
+    border-radius: 10px;
+    padding:15px;
+    font-size: 20px;
+}
 
 
+.boton, #copiarTexto{
+    color: #185552;
+    margin: 1em;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 10px;
+    opacity: 0.6;
+    box-shadow: 1px 1px 1px 1px rgb(12, 11, 11);
+    cursor: pointer;
+   
+}
+
+
+.boton:hover{
+    border-color: #e2e2e2;
+   
+}
+
+#copiarTexto:hover{
+    border-color: #e2e2e2;
+}
+
+.boton:active{
+    border-color: black;
+}
+
+#copiarTexto:active{
+    border-color: black;
+}
 
 .oculto{
     display: none;
