@@ -5,14 +5,14 @@ document.querySelector("#encriptar").onclick = function(){
   
   if(!/^[a-z ]+$/g.test(textoEscrito)){ //agregar un espacio para que acepte espacios
 
-    verAlerta()}
+    verAlerta();}
 
     else{ document.querySelector("#texto-encriptado").value = encriptar(textoEscrito);
       
       ocultarAlerta();
       ocultarfoto();
       verTextArea();
-      verBoton()
+      verBoton();
       ocultarAlertaCopiado();
     }
 }
@@ -28,9 +28,11 @@ document.querySelector("#desencriptar").onclick = function(){
     
   }else{
       document.querySelector("#texto-encriptado").value = desencriptar(textoDesencriptado);
-      document.querySelector("#titulo-caja").textContent = "Mensaje Desencriptado"
+      document.querySelector("#titulo-caja").textContent = "Mensaje Desencriptado";
       ocultarAlertaCopiado();
       ocultarAlerta();
+      ocultarfoto();
+      verTextArea();
     }
 }
 
@@ -45,7 +47,7 @@ document.querySelector("#copiarTexto").onclick = function(event){
 
 document.querySelector("#resetear").onclick = function(){
   ocultarTextArea();
-  verFoto()
+  verFoto();
   ocultarBoton();
   ocultarAlerta();
   ocultarAlertaCopiado();
