@@ -9,13 +9,12 @@ import {
   encriptador,
   desencriptador,
   copiarTexto,
+  resetear,
 } from './evento-click.js';
 
 import {
-  ocultarAlerta,
-  verAlertaCopiado,
-  resetear,
   textoInput,
+  mostrarAlertaExito,
 } from './ui.js';
 
 const iniciador = () => {
@@ -29,9 +28,8 @@ const iniciador = () => {
 
   copiarTexto(() => {
     copiarEnPortapapeles();
-    verAlertaCopiado();
-    ocultarAlerta();
-    document.querySelector('#texto-normal').value = '';
+    mostrarAlertaExito();
+    document.querySelector('#encriptador__textarea').value = '';
   });
 
   resetear();

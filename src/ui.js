@@ -1,51 +1,39 @@
-function verTextArea() {
-  document.querySelector('#idtextArea').className = ''; // siempre usar #(id) para ocultar o da error
-}
-
-function ocultarfoto() {
-  document.querySelector('#imagen2').className = 'oculto';
-}
-
-function verBoton() {
-  document.querySelector('#copiarTexto').className = '';
-}
-
-const verAlerta = () => {
-  document.querySelector('#alerta').className = '';
+const mostrarTextArea = () => {
+  document.querySelector('#desencriptador__textarea').classList.remove('ocultar');
+  document.querySelector('.desencriptador__imagen').classList.add('ocultar');
 };
 
-function ocultarAlerta() {
-  document.querySelector('#alerta').className = 'visibilidad';
-}
+const mostrarAlertaExito = () => {
+  document.querySelector('.desencriptador__alerta').classList.remove('visibilidad');
+};
 
-function verAlertaCopiado() {
-  document.querySelector('#alerta-copiado').className = '';
-}
+const mostrarAlertaNoPermitido = () => {
+  document.querySelector('.encriptador__alerta').classList.remove('visibilidad');
+};
 
-function ocultarAlertaCopiado() {
-  document.querySelector('#alerta-copiado').className = 'visibilidad2';
-}
+const mostrarBotones = () => {
+  document.querySelector('.desencriptador__botones').classList.remove('ocultar');
+};
 
-const resetear = () => {
-  const $boton = document.querySelector('#resetear');
-  $boton.addEventListener('click', () => {
-    window.location.reload();
-  });
+const ocultarAlertaExito = () => {
+  document.querySelector('.desencriptador__alerta').classList.add('visibilidad');
+};
+
+const ocultarAlertaNoPermitido = () => {
+  document.querySelector('.encriptador__alerta').classList.add('visibilidad');
 };
 
 const textoInput = () => {
-  const $obtenerTexto = document.querySelector('#texto-normal').value;
+  const $obtenerTexto = document.querySelector('#encriptador__textarea').value;
   return $obtenerTexto.toLowerCase();
 };
 
 export {
-  verTextArea,
-  ocultarfoto,
-  verBoton,
-  verAlerta,
-  ocultarAlerta,
-  verAlertaCopiado,
-  ocultarAlertaCopiado,
-  resetear,
+  mostrarTextArea,
+  mostrarAlertaExito,
+  mostrarAlertaNoPermitido,
+  ocultarAlertaExito,
+  ocultarAlertaNoPermitido,
   textoInput,
+  mostrarBotones,
 };

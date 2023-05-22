@@ -4,37 +4,34 @@ import {
 } from './encriptador.js';
 
 import {
-  verTextArea,
-  ocultarfoto,
-  verBoton,
-  verAlerta,
-  ocultarAlerta,
-  ocultarAlertaCopiado,
+  mostrarAlertaNoPermitido,
+  ocultarAlertaExito,
+  mostrarTextArea,
+  ocultarAlertaNoPermitido,
+  mostrarBotones,
 } from './ui.js';
 
 const encriptarMensaje = (mensaje) => {
   if (!/^[a-z ]+$/g.test(mensaje)) { // agregar un espacio para que acepte espacios
-    verAlerta();
+    mostrarAlertaNoPermitido();
   } else {
-    document.querySelector('#texto-encriptado').value = encriptar(mensaje);
-    ocultarfoto();
-    verTextArea();
-    verBoton();
-    ocultarAlertaCopiado();
+    document.querySelector('#desencriptador__textarea').value = encriptar(mensaje);
+    mostrarTextArea();
+    ocultarAlertaNoPermitido();
+    ocultarAlertaExito();
+    mostrarBotones();
   }
 };
 
 const desencriptarMensaje = (mensaje) => {
   if (!/^[a-z ]+$/g.test(mensaje)) {
-    verAlerta();
+    mostrarAlertaNoPermitido();
   } else {
-    document.querySelector('#texto-encriptado').value = desencriptar(mensaje);
-    document.querySelector('#titulo-caja').textContent = 'Mensaje Desencriptado';
-    ocultarAlertaCopiado();
-    ocultarAlerta();
-    ocultarfoto();
-    verBoton();
-    verTextArea();
+    document.querySelector('#desencriptador__textarea').value = desencriptar(mensaje);
+    mostrarTextArea();
+    ocultarAlertaNoPermitido();
+    ocultarAlertaExito();
+    mostrarBotones();
   }
 };
 

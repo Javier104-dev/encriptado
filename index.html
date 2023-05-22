@@ -1,56 +1,59 @@
 <!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Encriptador</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1 class="encabezado__titulo">Encriptador</h1>
+  </header>
+  <main>
+    <section class="contenedor__main">
+      <section class="encriptador">
+        <div class="titulo__encriptador">
+          <h1 class="titulo__encriptador__texto">Escriba su mensaje</h1>
+        </div>
+        <div class="encriptador__textarea">
+          <span class="encriptador__alerta visibilidad">No se permiten acentos ni caracteres especiales</span>
+          <textarea class="estilo__textarea" name="" id="encriptador__textarea" cols="30" rows="10"></textarea>
+        </div>
+  
+        <div class="encriptador__botones">
+          <button class="estilo__botones" id="boton__encriptar">Encriptar texto</button>
+          <button  class="estilo__botones" id="boton__desencriptar">Desencriptar texto</button>
+        </div>
+      </section>
 
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Encriptador Alura</title>
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
-    </head>
+      <section class="desencriptador">
+        <div class="titulo__desencriptador">
+          <h1 class="titulo__desencriptador__texto">Protege tu información</h1>
+        </div>
 
-    <body>
-        <header>
-            <h1 class="titulo">ENCRIPTADOR</h1>
-        </header>
+        <div class="desencriptador__textarea">
+          <span class="desencriptador__alerta visibilidad">Texto copiado con exito</span>
+          <textarea class="estilo__textarea ocultar" name="" id="desencriptador__textarea" cols="30" rows="10"></textarea>
+          <img class="desencriptador__imagen" src="css/imagenes/iStock-1197780051-scaled-1.jpg" alt="">
+        </div>
 
-        <main>
-            <sector>
-                <div class="contenedor">
-                    <div class="area-encriptado">
-                        <h2><label for="texto-normal">Introduzca su mensaje</label></h2>
-                        <p class="visibilidad" id="alerta">No se permiten acentos ni caracteres especiales</p>
-                        <textarea class="area-texto" id="texto-normal" cols="30" rows="20" placeholder="Escriba su mensaje"></textarea>
-                        <br>
-                        <input class="boton" id="encriptar" type="button" value="Encriptar Texto">
-                        <input class="boton" id="desencriptar" type="button" value="Desencriptar Texto">
-                    </div>
-                    
-                    <div class="imagen" id="imagen2" >
-                        <h2>Protege tu información</h2>
-                        <p class="visibilidad2" id="alerta-copiado2">Texto copiado con exito</p>
-                        <div class="marco-imagen">
-                            <img class="imagen-elegida" src="./css/iStock-1197780051-scaled-1.jpg ">
-                            <div class="texto-encima">El cifrado es clave para asegurar las comunicaciones en línea para todo, desde transacciones financieras hasta atención médica. Es un componente fundamental sobre el cual se construye una Internet confiable y eficaz.</div>
-                        </div>
-                    </div>
-
-                    <div class="oculto" id="idtextArea">
-                        <h2><label for="texto-encriptado" id="titulo-caja">Mensaje encriptado</label></h2>
-                        <p class="visibilidad2" id="alerta-copiado">Texto copiado con exito</p>
-                        <textarea class="area-texto" id="texto-encriptado" cols="30" rows="20" placeholder="Texto encriptado"></textarea>
-                        <br>
-                        <button id="copiarTexto" class="oculto">Copiar texto</button>
-                        <button class="boton" id="resetear" type="reset">Resetear pagina</button>
-                    </div>
-                </div>
-            </sector>
-        </main>
-        <footer>
-            <img class="logo" src="./css/candado.png" alt="Logo de pagina" >
-            <p class="leyenda">Encriptador BETA por Javier V.</p>
-        </footer>
-        <script src="./src/index.js" type="module"></script>
-    </body>
+        <div class="desencriptador__botones ocultar" id="desencriptador__botones">
+          <button class="estilo__botones" id="boton__copiar">Copiar texto</button>
+          <button class="estilo__botones" id="boton__resetear">Resetear pagina</button>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <section class="footer">
+      <img class="footer__imagen" src="css/imagenes/candado.png" alt="">
+      <span class="footer__leyenda">Encriptador creado por Javier Villca</span>
+    </section>
+  </footer>
+  <script type="module" src='src/index.js'></script>
+</body>
 </html>
