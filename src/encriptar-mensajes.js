@@ -15,7 +15,7 @@ const encriptarMensaje = (mensaje) => {
   if (!/^[a-z ]+$/g.test(mensaje)) { // agregar un espacio para que acepte espacios
     mostrarAlertaNoPermitido();
   } else {
-    document.querySelector('#desencriptador__textarea').value = encriptar(mensaje);
+    document.querySelector('#mensaje__encriptado__textarea').value = encriptar(mensaje);
     mostrarTextArea();
     ocultarAlertaNoPermitido();
     ocultarAlertaExito();
@@ -27,7 +27,7 @@ const desencriptarMensaje = (mensaje) => {
   if (!/^[a-z ]+$/g.test(mensaje)) {
     mostrarAlertaNoPermitido();
   } else {
-    document.querySelector('#desencriptador__textarea').value = desencriptar(mensaje);
+    document.querySelector('#mensaje__encriptado__textarea').value = desencriptar(mensaje);
     mostrarTextArea();
     ocultarAlertaNoPermitido();
     ocultarAlertaExito();

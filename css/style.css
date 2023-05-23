@@ -19,12 +19,12 @@ body{
   column-gap: 6rem;
 }
 
-.titulo__encriptador, .titulo__desencriptador{
+.titulo__encriptador, .mensaje__encriptado__titulo{
   text-align: center;
   margin-bottom: 1.2rem;
 }
 
-.titulo__encriptador__texto, .titulo__desencriptador__texto{
+.titulo__encriptador__texto, .mensaje__encriptado__titulo__texto{
   font-size: 1.9rem;
   font-weight: bold;
 }
@@ -42,7 +42,7 @@ body{
   resize: none;
 }
 
-.encriptador__botones, .desencriptador__botones{
+.encriptador__botones, .mensaje__encriptado__botones{
   display: flex;
   justify-content: space-around;
 }
@@ -88,7 +88,7 @@ body{
   margin-top: 1rem;
 }
 
-.encriptador__textarea, .desencriptador__textarea{
+.encriptador__textarea, .mensaje__encriptado__textarea{
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -103,7 +103,7 @@ body{
   background: red;
 }
 
-.desencriptador__alerta{
+.mensaje__encriptado__alerta{
   font-weight: bold;
   padding: 0.2rem;
   border-radius: 8px;
@@ -113,7 +113,7 @@ body{
   background: green;
 }
 
-.desencriptador__imagen{
+.mensaje__encriptado____imagen{
   box-sizing: border-box;
   box-shadow: 8px 6px 7px #211d1b;
   border-radius: 10px;

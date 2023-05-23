@@ -1,10 +1,10 @@
 const mostrarTextArea = () => {
-  document.querySelector('#desencriptador__textarea').classList.remove('ocultar');
-  document.querySelector('.desencriptador__imagen').classList.add('ocultar');
+  document.querySelector('#mensaje__encriptado__textarea').classList.remove('ocultar');
+  document.querySelector('.mensaje__encriptado____imagen').classList.add('ocultar');
 };
 
 const mostrarAlertaExito = () => {
-  document.querySelector('.desencriptador__alerta').classList.remove('visibilidad');
+  document.querySelector('.mensaje__encriptado__alerta').classList.remove('visibilidad');
 };
 
 const mostrarAlertaNoPermitido = () => {
@@ -12,11 +12,11 @@ const mostrarAlertaNoPermitido = () => {
 };
 
 const mostrarBotones = () => {
-  document.querySelector('.desencriptador__botones').classList.remove('ocultar');
+  document.querySelector('.mensaje__encriptado__botones').classList.remove('ocultar');
 };
 
 const ocultarAlertaExito = () => {
-  document.querySelector('.desencriptador__alerta').classList.add('visibilidad');
+  document.querySelector('.mensaje__encriptado__alerta').classList.add('visibilidad');
 };
 
 const ocultarAlertaNoPermitido = () => {
