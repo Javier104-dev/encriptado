@@ -5,4 +5,12 @@ const copiarEnPortapapeles = () => {
   texto.value = '';
 };
 
-export default copiarEnPortapapeles;
+const textoInput = () => {
+  const $obtenerTexto = document.querySelector('#encriptador__textarea').value;
+  return $obtenerTexto.toLowerCase();
+};
+
+export {
+  copiarEnPortapapeles,
+  textoInput,
+};

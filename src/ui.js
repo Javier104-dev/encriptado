@@ -23,17 +23,11 @@ const ocultarAlertaNoPermitido = () => {
   document.querySelector('.encriptador__alerta').classList.add('visibilidad');
 };
 
-const textoInput = () => {
-  const $obtenerTexto = document.querySelector('#encriptador__textarea').value;
-  return $obtenerTexto.toLowerCase();
-};
-
 export {
   mostrarTextArea,
   mostrarAlertaExito,
   mostrarAlertaNoPermitido,
   ocultarAlertaExito,
   ocultarAlertaNoPermitido,
-  textoInput,
   mostrarBotones,
 };

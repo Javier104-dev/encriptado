@@ -1,0 +1,5 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-image: radial-gradient(circle at 46.86% 85.89%, #399f9f 0, #378c90 12.5%, #37777d 25%, #356066 37.5%, #31474c 50%, #2a3032 62.5%, #211d1b 75%, #190900 87.5%, #0f0000 100%);
+  text-shadow: 8px 6px 7px #211d1b;
+}

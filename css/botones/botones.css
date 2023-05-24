@@ -1,0 +1,39 @@
+.encriptador__botones, .mensaje__encriptado__botones{
+  display: flex;
+  justify-content: space-around;
+}
+
+.estilo__botones{
+  box-shadow: 8px 6px 7px rgb(12, 11, 11);
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.estilo__botones:hover{
+  border-color: #e2e2e2;
+}
+
+.estilo__botones:active{
+  border-color: black;
+}
+
+@media screen and (max-width: 320px) {
+  .encriptador__botones, .mensaje__encriptado__botones{
+    display: flex;
+    column-gap: 0.5rem;
+  }
+
+  .estilo__botones{
+    width: 150px;
+    height: 30px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}

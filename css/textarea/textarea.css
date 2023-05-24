@@ -1,0 +1,44 @@
+.encriptador__textarea, .mensaje__encriptado__textarea{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.estilo__textarea{
+  background-image: radial-gradient(circle at 20.17% 44.74%, #247a6b 0, #1c6960 16.67%, #185552 33.33%, #174040 50%, #152c2d 66.67%, #121b1c 83.33%, #090a0a 100%);
+  box-sizing: border-box;
+  box-shadow: 8px 6px 7px #211d1b;
+  font-size: 1.3rem;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 1rem;
+  outline: none;
+  resize: none;
+}
+
+.mensaje__encriptado____imagen{
+  box-sizing: border-box;
+  box-shadow: 8px 6px 7px #211d1b;
+  border-radius: 10px;
+  height: 500px;
+  width: 400px;
+
+}
+
+@media screen and (max-width: 320px) {
+  .estilo__textarea{
+    font-size: 0.9rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 100%;
+    height: 150px;
+  }
+
+  .mensaje__encriptado____imagen{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+  }
+}

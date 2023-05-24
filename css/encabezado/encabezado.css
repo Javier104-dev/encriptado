@@ -1,0 +1,23 @@
+.encabezado{
+  text-align: center;
+  margin: 5rem;
+}
+
+.encabezado__titulo__redireccion{
+  text-decoration: none;
+  color: inherit;
+}
+
+.encabezado__titulo{
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 320px) {
+  .encabezado{
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .encabezado__titulo{
+    font-size: 2.2rem;
+  }
+}

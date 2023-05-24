@@ -1,0 +1,31 @@
+.encriptador__alerta{
+  font-weight: bold;
+  padding: 0.2rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  box-shadow: 8px 6px 7px #211d1b;
+  background: red;
+}
+
+.mensaje__encriptado__alerta{
+  font-weight: bold;
+  padding: 0.2rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  box-shadow: 8px 6px 7px #211d1b;
+  width: 200px;
+  background: green;
+}
+
+@media screen and (max-width: 320px) {
+  .encriptador__alerta{
+    padding: 0.1rem;
+    font-size: 0.6rem;
+  }
+
+  .mensaje__encriptado__alerta{
+    padding: 0.1rem;
+    font-size: 0.8rem;
+    width: 150px;
+  }
+}

@@ -1,4 +1,7 @@
-import copiarEnPortapapeles from './copiar-mensaje.js';
+import {
+  copiarEnPortapapeles,
+  textoInput,
+} from './copiar-mensaje-obtener-input.js';
 
 import {
   encriptarMensaje,
@@ -13,7 +16,6 @@ import {
 } from './evento-click.js';
 
 import {
-  textoInput,
   mostrarAlertaExito,
 } from './ui.js';
 
