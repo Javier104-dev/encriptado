@@ -12,7 +12,7 @@
   font-size: 5rem;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .encabezado{
     margin: 1rem 0rem 1rem 0rem;
   }

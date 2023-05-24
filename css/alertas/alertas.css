@@ -17,7 +17,7 @@
   background: green;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .encriptador__alerta{
     padding: 0.1rem;
     font-size: 0.6rem;

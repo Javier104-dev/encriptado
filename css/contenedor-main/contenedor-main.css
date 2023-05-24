@@ -4,7 +4,7 @@
   column-gap: 6rem;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .contenedor__main{
     display: flex;
     flex-direction: column;

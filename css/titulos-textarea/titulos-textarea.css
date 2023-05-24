@@ -8,7 +8,7 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .titulo__encriptador, .mensaje__encriptado__titulo{
     margin-bottom: 0.5rem;
   }
