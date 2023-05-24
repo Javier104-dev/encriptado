@@ -7,7 +7,7 @@
   box-shadow: 8px 6px 7px rgb(12, 11, 11);
   border: 1px black solid;
   border-radius: 10px;
-  width: 150px;
+  width: 50%;
   height: 40px;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -31,7 +31,6 @@
   }
 
   .estilo__botones{
-    width: 150px;
     height: 30px;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
