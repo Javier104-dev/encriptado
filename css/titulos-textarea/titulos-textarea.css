@@ -16,5 +16,6 @@
   .titulo__encriptador__texto, .mensaje__encriptado__titulo__texto{
     font-size: 1rem;
     font-weight: bold;
+    color: white;
   }
 }
