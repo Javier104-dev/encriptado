@@ -27,8 +27,8 @@ Para probar el encriptador click en el link.
 <h2 align='center'>Requisitos del proyecto</h2>
 
 ### Requisitos:
-- Debe funcionar solo con letras minúsculas
-- No deben ser utilizados letras con acentos ni caracteres especiales
+- Debe funcionar solo con letras minúsculas.
+- No deben ser utilizados letras con acentos ni caracteres especiales.
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
   - Por ejemplo:
     - "gato" => "gaitober"
