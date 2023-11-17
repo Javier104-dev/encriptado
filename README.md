@@ -14,6 +14,7 @@ Las reglas de encriptación que teniamos que utilizar son las siguientes:
 |   u   | ufat  |
 
 ### Especificaciones:
+- Servidor: http://127.0.0.1:8080
 - Versión: 0.1.1
 - Diseño responsivo
 - Autor: Javier Anibal Villca
