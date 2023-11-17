@@ -5,13 +5,13 @@ Primera entrega para el Programa ONE Oracle junto con Alura Latam. Teníamos com
 
 Las reglas de encriptación que teniamos que utilizar son las siguientes:
 
-| Vocal |  Llave  |
-| :---: | :-----: |
-|  `a`  |  `ai`   |
-|  `e`  | `enter` |
-|  `i`  | `imes`  |
-|  `o`  | `ober`  |
-|  `u`  | `ufat`  |
+| Vocal | Llave |
+| :---: | :---: |
+|   a   |  ai   |
+|   e   | enter |
+|   i   | imes  |
+|   o   | ober  |
+|   u   | ufat  |
 
 ### Especificaciones:
 - Versión: 0.1.1
@@ -26,7 +26,6 @@ Para probar el encriptador click en el link.
 <h2 align='center'>Requisitos del proyecto</h2>
 
 ### Requisitos:
-
 - Debe funcionar solo con letras minúsculas
 - No deben ser utilizados letras con acentos ni caracteres especiales
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
@@ -39,9 +38,7 @@ inserción del texto que será encriptado o desencriptado, y el usuario debe pod
 El resultado debe ser mostrado en la pantalla.
 
 ### Extras:
-
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
-
 
 <h2 align='center'>Instrucciones de instalación</h2>
 
@@ -60,7 +57,6 @@ El resultado debe ser mostrado en la pantalla.
 <h2 align='center'>Lo que Encontrarás</h2>
 
 ### Página principal
-
 <p align='left'>
   <img
     alt='Página principal'
@@ -71,7 +67,6 @@ El resultado debe ser mostrado en la pantalla.
 <br>
 
 ### Mensaje encriptado
-
 <p align='left'>
   <img
     alt='Mensaje encriptado'
@@ -82,12 +77,11 @@ El resultado debe ser mostrado en la pantalla.
 <br>
 
 ### Versión responsiva
-
 <p align='left'>
   <img
     alt='Versión responsiva:'
     width='300'
-    src='https://github.com/Javier104-dev/encriptado/assets/105408069/55c0133c-993c-4deb-a779-2f7268412107'
+    src='https://github.com/Javier104-dev/encriptado/assets/105408069/8898f762-3480-4ede-923d-215c4bedd1c5'
   >
 </p>
 <br>
