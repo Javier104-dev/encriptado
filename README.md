@@ -65,7 +65,7 @@ El resultado debe ser mostrado en la pantalla.
   <img
     alt='Página principal'
     width='500'
-    src='https://user-images.githubusercontent.com/105408069/188701073-2af8a837-6aea-4815-a9ec-08876ba32a88.png'
+    src='https://github.com/Javier104-dev/encriptado/assets/105408069/e9fd0453-3ee6-4e68-a0ef-4c95017b560b'
   >
 </p>
 <br>
@@ -76,7 +76,7 @@ El resultado debe ser mostrado en la pantalla.
   <img
     alt='Mensaje encriptado'
     width='500'
-    src='https://user-images.githubusercontent.com/105408069/188701073-2af8a837-6aea-4815-a9ec-08876ba32a88.png'
+    src='https://github.com/Javier104-dev/encriptado/assets/105408069/a5b097e6-9e88-4c0f-98cf-f87d3c3c46d8'
   >
 </p>
 <br>
@@ -86,8 +86,8 @@ El resultado debe ser mostrado en la pantalla.
 <p align='left'>
   <img
     alt='Versión responsiva:'
-    width='500'
-    src='https://user-images.githubusercontent.com/105408069/188701073-2af8a837-6aea-4815-a9ec-08876ba32a88.png'
+    width='300'
+    src='https://github.com/Javier104-dev/encriptado/assets/105408069/55c0133c-993c-4deb-a779-2f7268412107'
   >
 </p>
 <br>
