@@ -61,7 +61,6 @@ El resultado debe ser mostrado en la pantalla.
 <p align='left'>
   <img
     alt='Página principal'
-    width='500'
     src='https://github.com/Javier104-dev/encriptado/assets/105408069/e9fd0453-3ee6-4e68-a0ef-4c95017b560b'
   >
 </p>
@@ -71,7 +70,6 @@ El resultado debe ser mostrado en la pantalla.
 <p align='left'>
   <img
     alt='Mensaje encriptado'
-    width='500'
     src='https://github.com/Javier104-dev/encriptado/assets/105408069/a5b097e6-9e88-4c0f-98cf-f87d3c3c46d8'
   >
 </p>
@@ -81,7 +79,6 @@ El resultado debe ser mostrado en la pantalla.
 <p align='left'>
   <img
     alt='Versión responsiva:'
-    width='300'
     src='https://github.com/Javier104-dev/encriptado/assets/105408069/8898f762-3480-4ede-923d-215c4bedd1c5'
   >
 </p>
