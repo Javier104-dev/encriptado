@@ -56,7 +56,7 @@ El resultado debe ser mostrado en la pantalla.
   - http://192.168.0.4:8080
   - http://127.0.0.1:8080
 
-<h2 align='center'>Lo que Encontrarás</h2>
+<h2 align='center'>Lo que encontrarás</h2>
 
 ### Página principal
 <p align='left'>
