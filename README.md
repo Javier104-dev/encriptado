@@ -21,7 +21,7 @@ Las reglas de encriptación que teniamos que utilizar son las siguientes:
 - Repositorio GitHub: git+https://github.com/Javier104-dev/encriptado.git
 
 ### GitHub Pages
-Para probar el encriptador click en el link.
+Para probar el encriptador clic en el link.
 - https://javier104-dev.github.io/encriptado/
 
 <h2 align='center'>Requisitos del proyecto</h2>
