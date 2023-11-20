@@ -45,6 +45,7 @@ El resultado debe ser mostrado en la pantalla.
 
 ### Requerimientos:
 - IDE - Visual Studio Code v1.84.2
+- Git v2.43.0
 - Node.js v20.9.0
 
 ### Preparando el ambiente:
