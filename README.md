@@ -13,7 +13,7 @@ Las reglas de encriptación que teniamos que utilizar son las siguientes:
 |   o   | ober  |
 |   u   | ufat  |
 
-### Especificaciones:
+### Especificaciones
 - Servidor: http://127.0.0.1:8080
 - Versión: 0.1.1
 - Diseño responsivo
@@ -26,7 +26,7 @@ Para probar el encriptador clic en el link.
 
 <h2 align='center'>Requisitos del proyecto</h2>
 
-### Requisitos:
+### Requisitos
 - Debe funcionar solo con letras minúsculas.
 - No deben ser utilizados letras con acentos ni caracteres especiales.
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
@@ -38,17 +38,17 @@ Para probar el encriptador clic en el link.
 inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.
 El resultado debe ser mostrado en la pantalla.
 
-### Extras:
+### Extras
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
 <h2 align='center'>Instrucciones de instalación</h2>
 
-### Requerimientos:
+### Requerimientos
 - IDE - Visual Studio Code v1.84.2
 - Git v2.43.0
 - Node.js v20.9.0
 
-### Preparando el ambiente:
+### Preparando el ambiente
 - Descargar o clonar el repositorio.
 - Ejecutar en consola `npm install` para instalar las dependencias requeridas.
 - Correr el comando `npm run server:start` para iniciar el servidor local.
